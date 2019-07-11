@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$logo-txt-blue:	#365575;
+$navy-logo:	#1E2533;
+$navy:#1E1F22;
+$blue-buttons:	#25597E; //buttons
+$lighter-blue:	#186AA6; //section
+$dark-blue:	#01337A;//section
+$blue-light:		#2992B2; //separator
+$white-card: 	#FDFDFD;
+$grey-placeholder:	#E2E2E2;
+$black: 	#222222; //lower footer
+$orange:#F37714; //button
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+  .row-full-size {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .column-right {
+    padding-right:0;
+   }
+.column-left-lg{
+  padding-left:0;
+}
+.form-text{
+  font-size:14px;
+}
+.input-custom{
+ width: 170px !important;
+ height: 32px !important;
+}
+.button-input{
+  height: 32px !important;
+}
+.navbar {
+  border-top: 10px solid $navy;
+  .nav-tem.nav-link.active{
+    background-color: $blue-buttons;
+  }
+}
+
+.column{
+  padding: 0;
+}
+// .r-padding, .lg-space-r{
+//   margin-right:7px;
+// }
+// .l-padding, .lg-space-l{
+//   margin-left:7px;
+// }
+
+.section-dark-blue{
+  background-color: $dark-blue;
+}
+.slider-holder{
+  background-color: $grey-placeholder;
+  min-height: 160px;
+}
+.card-holder{
+  background-color: $white-card;
+  box-shadow: 1px 0 0 lightgrey;
+  min-height: 130px;
+  max-height:200px;
+}
+.card-text-holder{
+  background-color: $white-card;
+  box-shadow: 1px 0 0 lightgrey;
+  min-height: 160px;
+
+}
+.page-footer{
+  background-color: $black;
+  .footer-section-blue{
+    background-color: $lighter-blue;
+  }
+
+  .separator {
+    height: 8px;
+  }
+}
+@include media-breakpoint-only(xs) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    .column-right {
+      padding-right: 0;
+    }
+  }
+  .r-padding, .l-padding {
+    margin-left: 0;
+    margin-right:0;
+  }
+
+  .row-style-left {
+    margin-left: 0;
+    margin-right:0;
+  }
+
+  .column-left {
+    padding-right: 0;
+  }
+
+  .section-wrapper {
+    background-color:$dark-blue;
+  }
+  .column {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .txt-center {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .wrapper {
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .column {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .r-padding, .l-padding {
+    margin-left: 0;
+    margin-right:0;
+  }
+
+  .column-left {
+    padding-left: 0;
+  }
+  .column-right {
+    padding-right: 0;
+  }
+
+}
+
+@include media-breakpoint-only(md) {
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .column{
+    padding:0;
+  }
+  .row-style-left {
+    margin-left: 0;
+  }
+
+  .r-padding {
+    margin-right:7px;
+  }
+  .l-padding {
+    margin-left:10px;
+  }
+  footer.input-md{
+    max-width:100px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .r-padding, .lg-space-r{
+    margin-right:7px;
+  }
+  .l-padding, .lg-space-l{
+    margin-left:7px;
+  }
+}

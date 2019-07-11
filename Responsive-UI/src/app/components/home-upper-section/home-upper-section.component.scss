@@ -1,0 +1,45 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.d-flex.justify-content-end {
+  width: 100%;
+  a {
+    color: white;
+    padding-left:10px;
+  }
+
+}
+
+.col-sm-4.text-container {
+height: 181px;
+}
+
+.carousel {
+  max-height:80%;
+  .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+  }
+}
+
+small {
+  line-height: 50%;
+}
+
+.carousel-item {
+  height: 182px;
+}
+
+// @include media-breakpoint-down(xs) {
+//  .column {
+//   padding-right:0;
+//  }
+// }
+
+// @include media-breakpoint-down(sm) {
+//   .column {
+//     padding-right:0;
+//   }
+//  }
