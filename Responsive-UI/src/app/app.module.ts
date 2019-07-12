@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HomeUpperSectionComponent } from './components/home-upper-section/home-upper-section.component';
 import { HomeMiddleSectionComponent } from './components/home-middle-section/home-middle-section.component';
 import { HomeLowerSectionComponent } from './components/home-lower-section/home-lower-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HomeLowerSectionComponent } from './components/home-lower-section/home-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
