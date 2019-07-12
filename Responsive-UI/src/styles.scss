@@ -20,6 +20,9 @@ $orange:#F37714; //button
   width: 60%;
   margin: 0 auto;
 }
+.btn, .nav-tem, .form-control{
+  line-height:60%;
+}
   .row-full-size {
     margin-left: 0;
     margin-right: 0;
@@ -52,12 +55,6 @@ $orange:#F37714; //button
 .column{
   padding: 0;
 }
-// .r-padding, .lg-space-r{
-//   margin-right:7px;
-// }
-// .l-padding, .lg-space-l{
-//   margin-left:7px;
-// }
 
 .section-dark-blue{
   background-color: $dark-blue;
@@ -150,7 +147,7 @@ $orange:#F37714; //button
 
 @include media-breakpoint-only(md) {
   .wrapper {
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
     padding: 0 auto;
   }
