@@ -73,12 +73,9 @@ $orange:#F37714; //button
 .column-left-lg{
   padding-left:0;
 }
-.form-text{
-  font-size:14px;
-}
+
 .input-custom{
- width: 170px !important;
- height: 32px !important;
+ max-height: 32px !important;
 }
 .button-input{
   height: 32px !important;
@@ -97,10 +94,7 @@ $orange:#F37714; //button
 .section-dark-blue{
   background-color: $dark-blue;
 }
-.slider-holder{
-  background-color: $grey-placeholder;
-  // min-height: 160px;
-}
+
 .card-holder{
   background-color: $white-card;
   box-shadow: 1px 0 0 lightgrey;
@@ -122,6 +116,10 @@ $orange:#F37714; //button
   .separator {
     height: 8px;
   }
+}
+
+.btn.button-input :disabled{
+  background-color: $blue-buttons !important;
 }
 @include media-breakpoint-only(xs) {
   .wrapper {

@@ -9,6 +9,7 @@ import { HomeMiddleSectionComponent } from './components/home-middle-section/hom
 import { HomeLowerSectionComponent } from './components/home-lower-section/home-lower-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
