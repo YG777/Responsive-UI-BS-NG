@@ -5,12 +5,12 @@ Webpage shell with layouts.
 
 In progress.
 
+
+<img src="/assets/images/workingImgs/laptopScreen.JPG"   style="float: left; margin-right: 10px;" />
+
 To do:
-- Angular directives - ng-for, etc.
-- Input validation
-- Minor layout fixes
-- Add cards and slider
-- Material Bootstrap side slider for mobile
+- Minor layout fixes - upper section
+- Navbar and slider
 - Rewrite Bootstrap breakpoints
 
 To run:
