@@ -258,6 +258,9 @@ $orange: #f37714; //button
   footer.input-md {
     max-width: 100px;
   }
+  .footer-link{
+    text-align: center;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -269,4 +272,9 @@ $orange: #f37714; //button
   .lg-space-l {
     margin-left: 7px;
   }
+
+  .footer-link{
+    text-align: center;
+  }
+
 }
