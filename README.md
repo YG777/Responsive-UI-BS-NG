@@ -5,6 +5,8 @@ Responsive webpage shell with layouts.
 
 In progress.
 
+Looks like this now.
+
 ![alt text](https://github.com/YG777/Responsive-UI-BS-NG/blob/master/Responsive-UI/src/assets/images/workingImgs/laptopScreen.JPG)
 
 To do:
