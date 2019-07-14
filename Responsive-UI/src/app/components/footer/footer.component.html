@@ -1,40 +1,37 @@
 <!-- Footer -->
-<footer class="page-footer font-small">
+<footer class="page-footer font-small" style="box-shadow:0px 0px 2px rgb(201, 200, 200);">
 
-  <div class="bg-light">
+  <div class="bg-light pb-1">
     <div class="container wrapper">
       <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center">
+      <div class="row pt-3 pb-0 d-flex align-items-center">
 
         <!-- Grid column -->
         <div class="col p-0 ml-2 mr-2">
 
-
-
-
           <form #subscribeForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate
-            class="form-group form-row equal-cols" style="width: 100%">
+            class="form-group form-row equal-cols mb-2" style="width: 100%;">
 
             <div class="col col-12 col-sm-12 col-md-12 col-lg-3 p-0 text-xs-center text-sm-center text-md-center text-lg-left">
-              <label class="text-muted col-form-label">Subscribe for news</label>
+              <label class="text-muted col-form-label" style="font-size: small">Subscribe for news</label>
             </div>
 
             <div class="col col-12 col-sm-12 col-md-4 col-lg-3 p-0 ">
               <input type="text" #name="ngModel" required name="name" [class.is-invalid]="name.invalid && name.touched"
-                [(ngModel)]="subscriberModel.name" class="form-control  input-custom" placeholder="Name">
+                [(ngModel)]="subscriberModel.name" class="form-control  input-custom" placeholder="Name" style="font-size: small">
               <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
             </div>
 
             <div class="col col-12  py-xs-2 py-sm-2 py-md-0 col-sm-12 col-md-5 col-lg-3 p-0 pl-md-4">
               <input type="email" #email="ngModel" required name="email" class="form-control  input-custom"
                 [class.is-invalid]="email.invalid && email.touched" [(ngModel)]="subscriberModel.email"
-                pattern="[^ @]*@[^ @]*" placeholder="E-mail address">
+                pattern="[^ @]*@[^ @]*" placeholder="E-mail address"style="font-size: small">
               <small class="text-danger" [class.d-none]="email.valid || email.untouched">E-mail is required</small>
             </div>
 
             <div class="col col-12 col-sm-12 col-md-3 col-lg-3 p-0 text-xs-center text-sm-center text-md-right">
-              <button type="submit" [disabled]="subscribeForm.form.invalid" style="background-color: #25597E"
-                class="btn text-white button-input">Subscribe</button>
+              <button type="submit" [disabled]="subscribeForm.form.invalid" style="background-color: #25597E; font-size: small;"
+                class="btn text-white button-input px-4 ml-2">Subscribe</button>
             </div>
 
           </form>
@@ -44,8 +41,8 @@
       <!-- Grid row-->
     </div>
   </div>
-  <div class="footer-section-blue text-white pt-4 pb-3">
-    <div class="wrapper pb-2 pt-2">
+  <div class="footer-section-blue text-white pt-3 pb-4">
+    <div class="wrapper">
       <h6 class="p-0 m-0">
         <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</small>
       </h6>
@@ -57,44 +54,44 @@
   </div>
   <div class="separator bg-info p-0 m-0"></div>
   <!-- Footer Links -->
-  <div class="text-left text-md-left mt-5 footer-section-dark pb-4">
+  <div class="text-left text-md-left mt-4 footer-section-dark pb-4">
 
     <!-- Grid row -->
-    <div class="row mt-3 text-white wrapper">
+    <div class="row footer-links mt-3 text-white wrapper">
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4 col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2  col-sm-4 col-4  px-0 mb-4">
         <a class="font-weight-bold">Link1</a>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4 col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2  col-sm-4 col-4 px-0 mb-4  mx-xs-auto w-xs-100" type="second">
         <a class="font-weight-bold">Link2</a>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4 col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2 col-sm-4 col-4 px-0 mb-4">
         <a class="font-weight-bold">Link3</a>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2 col-sm-4 col-4  px-0 mb-4">
         <a class="font-weight-bold">Link4</a>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2 col-sm-4 col-4 px-0 mb-4">
         <a class="font-weight-bold">Link5</a>
       </div>
 
-      <div class="col-md-2 col-lg-2 col-xl-2 col-4 col-sm-4 col-4 mx-auto mb-4 d-flex justify-content-between">
+      <div class="footer-link col-md-2 col-lg-2 col-xl-2  col-sm-4 col-4  px-0 mb-4">
         <a class="font-weight-bold">Link6</a>
       </div>
 
     </div>
     <!-- Grid row -->
 
-    <div class="row footer-section-dark2 wrapper">
-      <small class="text-white txt-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    <div class="row footer-section-dark2 wrapper mb-2">
+      <small class="text-white txt-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur.</small>
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
     </div>
 
 
