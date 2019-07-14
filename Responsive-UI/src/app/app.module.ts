@@ -9,7 +9,8 @@ import { HomeMiddleSectionComponent } from './components/home-middle-section/hom
 import { HomeLowerSectionComponent } from './components/home-lower-section/home-lower-section.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule }   from '@angular/forms';
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule.forRoot(),
-    FormsModule
+    FormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
